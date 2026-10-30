@@ -1,0 +1,4 @@
+name = "vehiclehandoff"
+compatibility_date = "2026-10-28"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".deploy"

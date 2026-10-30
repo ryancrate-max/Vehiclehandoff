@@ -1,0 +1,13 @@
+node_modules/
+.next/
+.open-next/
+.deploy/
+.wrangler/
+.env*
+!.env.example
+*.pem
+*.key
+.dev.vars*
+secrets/
+tsconfig.tsbuildinfo
+*.tgz
