@@ -22,7 +22,7 @@ export async function POST(req: Request) {
   if (!q) return jsonError("Choose the buyer's province.");
   const origin = new URL(req.url).origin;
   try {
-    const s = await createCheckoutSession(m.secretKey, checkoutFields({ kitSlug: kit.slug, kitName: kit.name, quote: q, successUrl: `${origin}/start?paid=1`, cancelUrl: `${origin}/start?paid=0` }));
+    const s = await createCheckoutSession(m.secretKey, checkoutFields({ kitSlug: kit.slug, kitName: kit.name, quote: q, successUrl: `${origin}/start?paid=1&session_id={CHECKOUT_SESSION_ID}`, cancelUrl: `${origin}/start?paid=0` }));
     if (s.livemode && m.mode !== "live") return jsonError("Live-mode session refused.", 403);
     return NextResponse.json({ url: s.url });
   } catch (e) { return jsonError((e as Error).message, 502); }

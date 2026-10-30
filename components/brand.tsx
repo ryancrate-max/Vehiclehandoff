@@ -47,6 +47,7 @@ export function Header() {
           <Link href="/guides">Guides</Link>
           <Link href="/pricing">Pricing</Link>
           <Link href="/faq">FAQ</Link>
+          <Link href="/contact">Contact</Link>
           <Link className="cta" href="/start">Start a kit</Link>
         </nav>
       </div>
@@ -77,6 +78,7 @@ export function Footer() {
           <Link href="/guides">Guides</Link><br />
           <Link href="/provinces">Province rules</Link><br />
           <Link href="/faq">FAQ</Link><br />
+          <Link href="/contact">Contact</Link><br />
           <Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link><br />
           <a href="https://boathandoff.ca">Selling a boat? BoatHandoff.ca</a>
         </div>

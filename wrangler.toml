@@ -2,3 +2,13 @@ name = "vehiclehandoff"
 compatibility_date = "2026-10-28"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".deploy"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "vehiclehandoff"
+database_id = "623ce03e-3bfe-4f09-9d92-ab01e49b270e"
+migrations_dir = "migrations"
+
+[[services]]
+binding = "MAILER"
+service = "vehiclehandoff-mailer"
